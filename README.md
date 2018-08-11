@@ -2,6 +2,9 @@
 
 ### 1.仮想環境構築
 ```
+$ brew cask install virtualbox
+$ brew cask install vagrant
+$ brew cask install vagrant-manager
 $ vagrant up
 ```
 ---
@@ -209,7 +212,7 @@ i  Writing project information to .firebaserc...
 
 ##### 5. サーバー起動
 ```
-$ firebase serve --only hosting,functions -o 0.0.0.0 -p 5000
+$ firebase serve --only hosting,functions -o 0.0.0.0
 ```
 
 ```

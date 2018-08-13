@@ -6,15 +6,15 @@
 $ brew cask install visual-studio-code
 ```
 
-VSCodeを起動し`shift + command + p`で
+VSCodeを起動し`shift + command + p`で
 シェルコマンド入力ウインドウが表示されます。
 
 ここに`Shell Command`と入力する、候補が表示される  
-`Shell Command: Install 'code' command in PATH`を選択
-ターミナルで`code`コマンドが使用できるようになります。
+`Shell Command: Install 'code' command in PATH`を選択
+ターミナルで`code`コマンドが使用できるようになります。
 
 macで統合型のターミナルを使用する場合は、  
-`shift + control + @`でターミナルの表示・非常時を  
+`shift + control + @`でターミナルの表示・非常時を  
 切り替えることができます。
 
 
@@ -24,7 +24,7 @@ macで統合型のターミナルを使用する場合は、
     * [Firebase console](https://console.firebase.google.com/?hl=ja)へアクセスする
 ![](img/00_firebase_console_01.png)
     * プロジェクトを追加をクリック
-    * プロジェクトの追加ダイアログが表示される。
+    * プロジェクトの追加ダイアログが表示される。
     ![](img/00_firebase_console_02.png)
     * プロジェクト名に好きな名前を入力する(今回は`nakata-chat-sample`としました。)
     * 地域は`日本`を選択
@@ -62,10 +62,10 @@ $ git clone https://github.com/t-nakata/firebase-functions-sample.git
 
 作業ディレクトリへ移動し、VS Codeを開く
 ```
-$ cd firebase-functions-sample/
+$ cd firebase-functions-sample/
 $ pwd 
 /User/[userName]/Desktop/firevase/firebase-functions-sample
-$ code .
+$ code .
 $ vagrant up
 ```
 

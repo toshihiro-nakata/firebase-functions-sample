@@ -1,12 +1,74 @@
 # Firebase　Hosting Functions 開発環境構築
 
+### 事前準備
+* VS Codeのインストール
+```
+$ brew cask install visual-studio-code
+```
+
+VSCodeを起動し`shift + command + p`で
+シェルコマンド入力ウインドウが表示されます。
+
+ここに`Shell Command`と入力する、候補が表示される  
+`Shell Command: Install 'code' command in PATH`を選択
+ターミナルで`code`コマンドが使用できるようになります。
+
+macで統合型のターミナルを使用する場合は、  
+`shift + control + @`でターミナルの表示・非常時を  
+切り替えることができます。
+
+
+---
+
+* Firebaseでプロジェクトを追加する 
+    * [Firebase console](https://console.firebase.google.com/?hl=ja)へアクセスする
+![](img/00_firebase_console_01.png)
+    * プロジェクトを追加をクリック
+    * プロジェクトの追加ダイアログが表示される。
+    ![](img/00_firebase_console_02.png)
+    * プロジェクト名に好きな名前を入力する(今回は`nakata-chat-sample`としました。)
+    * 地域は`日本`を選択
+    * `測定管理者感のデータ保護条項`への同意にチェック
+    ![](img/00_firebase_console_03.png)
+    * `プロジェクトを作成`をクリック
+    * プロジェクトの作成が開始される。
+    * 少し待つと次のような画面が表示されるので`次へ`をクリック
+    ![](img/00_firebase_console_04.png)
+    * 下記のように表示されればFirebase側の準備は完了です。
+    ![](img/00_firebase_console_05.png)
+
+
+---
 ### 1.仮想環境構築
 ```
 $ brew cask install virtualbox
 $ brew cask install vagrant
 $ brew cask install vagrant-manager
+```
+
+任意の作業ディレクトリを作成  
+(今回は`/User/[userName]/Desktop/firebase/`とします)
+
+```
+$ cd ~/Desktop
+$ mkdir firebase
+$ cd firebase
+```
+
+開発環境の設定ファイルのCheckout
+```
+$ git clone https://github.com/t-nakata/firebase-functions-sample.git
+```
+
+作業ディレクトリへ移動し、VS Codeを開く
+```
+$ cd firebase-functions-sample/
+$ pwd 
+/User/[userName]/Desktop/firevase/firebase-functions-sample
+$ code .
 $ vagrant up
 ```
+
 ---
 ### 2.ゲストOSへSSH接続
 ```
@@ -86,14 +148,14 @@ but for now we'll just set up a default project.
 ```
 ? Select a default Firebase project for this directory: (Use arrow keys)
 ❯ [don't setup a default project]
-  fire-fun-sample (fire-fun-sample)
+  nakata-chat-sample (nakata-chat-sample)
   [create a new project]
 ```
 
 上下キーでプロジェクトを選び`Enter`で決定
 
 ```
-? Select a default Firebase project for this directory: fire-fun-sample (fire-fun-sample) 
+? Select a default Firebase project for this directory: nakata-chat-sample (nakata-chat-sample) 
 
 === Hosting Setup
 

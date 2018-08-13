@@ -32,7 +32,7 @@ macで統合型のターミナルを使用する場合は、
     ![](img/00_firebase_console_03.png)
     * `プロジェクトを作成`をクリック
     * プロジェクトの作成が開始される。
-    * 少し待つと次のような画面が表示されるので`次へ`をクリック
+    * 少し待つと次のような画面が表示されるので`次へ`をクリック
     ![](img/00_firebase_console_04.png)
     * 下記のように表示されればFirebase側の準備は完了です。
     ![](img/00_firebase_console_05.png)
@@ -179,7 +179,7 @@ have a build process for your assets, use your build's output directory.
 ? Configure as a single-page app (rewrite all urls to /index.html)? (y/N)
 ```
 
-`y`を入力して`Enter`
+`y`を入力して`Enter`
 
 ```
 ? Configure as a single-page app (rewrite all urls to /index.html)? Yes
